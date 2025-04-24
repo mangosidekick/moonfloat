@@ -1,49 +1,71 @@
 body{
     background-color: #1B6360;
+    font-family: "Abel", sans-serif;
+    margin: 20px;
 }
 
 #container{
     display: flex;
     float: left;
     margin: auto;
-    justify-content: center;
+    justify-content: flex-end;
+    text-align: center;
     width: 100%;
     height: 100%;
 }
+
+#window-header{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    justify-content: flex-end;
+}
+#window-header p{
+    line-height: 1px;
+    display: inline-block;
+}
 #left-box{
-    background-color: red;
-    width: 300px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    width: 350px;
+    height: 600px;
 }
 
 #center-box{
-    background-color: beige;
-    width: 300px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    width: 800px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #right-box{
-    background-color: blue;
-    width: 300px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    width: 350px;
 }
 
 /*scroll*/
 .scroll-left {
- height: 50px;	
+ height: 20px;	
  width: 100%;
  overflow: hidden;
- background: yellow;
- color: orange;
- border: 1px solid orange;
+margin: auto;
+color: white;
 }
 .scroll-left p {
  width: 100%;
  height: 100%;
  margin: 0;
- line-height: 50px;
+ line-height: 20px;
  text-align: center;
  /* Starting position */
  transform:translateX(100%);
  /* Apply animation to this element */
- animation: scroll-left 60s linear infinite;
+ animation: scroll-left 40s linear infinite;
 }
 /* Move it (define the animation) */
 @keyframes scroll-left {
