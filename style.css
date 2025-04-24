@@ -76,3 +76,12 @@ color: white;
  transform: translateX(-100%); 
  }
 }
+
+#winnie {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+  }
+
+
+ 
